@@ -1,0 +1,153 @@
+/* ————— GENERAL STYLING ————— */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fff7fb;
+  color: #444;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #ff8ac9;
+}
+
+/* ————— HEADER ————— */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 170, 220, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  color: #ff78c4;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #ffe9f4;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+/* ————— HERO SECTION ————— */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+}
+
+.hero .text h2 {
+  font-size: 36px;
+  color: #ff67b3;
+}
+
+.hero img {
+  width: 280px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease;
+}
+
+.anime-character.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ————— BUTTONS ————— */
+.cute-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ffb6df;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cute-btn:hover {
+  background: #ff87c5;
+  transform: scale(1.08);
+}
+
+/* Wiggle animation */
+.wiggle {
+  animation: wiggle 0.4s ease;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* ————— PRODUCT SECTION ————— */
+.products {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(255, 180, 210, 0.4);
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* ————— ABOUT SECTION ————— */
+.about {
+  padding: 50px 10%;
+  background: #fff0fa;
+  text-align: center;
+  border-radius: 30px 30px 0 0;
+}
+
+/* ————— FOOTER ————— */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffe1f4;
+  margin-top: 40px;
+}
